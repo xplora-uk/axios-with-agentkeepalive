@@ -1,5 +1,5 @@
 {
-  "name": "axios-with-agentkeepalive",
+  "name": "@xplora-uk/axios-with-agentkeepalive",
   "version": "1.0.0",
   "description": "axios with agentkeepalive",
   "main": "lib/index.js",
