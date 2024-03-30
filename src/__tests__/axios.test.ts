@@ -5,6 +5,13 @@ import { describe, it } from 'node:test';
 import { createAxiosInstance, makeAgentsForDefaultAxios } from '../axios';
 
 describe('axios lib', () => {
+  it('should create axios instance with no options', async () => {
+    const client = createAxiosInstance();
+    assert.equal(typeof client, 'function');
+    assert.notEqual(client.defaults.httpAgent, null);
+    assert.notEqual(client.defaults.httpsAgent, null);
+  });
+
   it('should update default agents of axios', async () => {
     makeAgentsForDefaultAxios();
     assert.equal(typeof axios, 'function');
@@ -31,6 +38,4 @@ describe('axios lib', () => {
     const res = await client.get('/');
     assert.equal(typeof res.data, 'string');
   });
-
-
 });

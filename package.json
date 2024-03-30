@@ -1,6 +1,6 @@
 {
   "name": "@xplora-uk/axios-with-agentkeepalive",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "axios with agentkeepalive",
   "main": "lib/index.js",
   "type": "commonjs",
@@ -33,7 +33,7 @@
   "homepage": "https://github.com/xplora-uk/axios-with-agentkeepalive#readme",
   "dependencies": {
     "agentkeepalive": "^4.5.0",
-    "axios": "^1.6.7"
+    "axios": "^1.6.8"
   },
   "devDependencies": {
     "@istanbuljs/nyc-config-typescript": "^1.0.2",
@@ -43,5 +43,8 @@
     "ts-mocha": "^10.0.0",
     "ts-node": "^10.9.2",
     "typescript": "^5.3.3"
+  },
+  "engines": {
+    "node": ">=18"
   }
 }
